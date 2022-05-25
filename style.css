@@ -1,5 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+li{
+    list-style: none;
+}
+
+body{
+    width: 100vw;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 1em;
+    background-color: #212121;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 1.2em;
+    color: #F0F0F0;
+}
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 2.5em;
+    margin: 1em 0;
+}
+
+.input-container input{
+    width: 80%;
+    padding: 1em;
+    background-color: #363636;
+    color: #F0F0F0;
+    font-size: 1em;
+    border: 0;
+    border-radius: 10px 0 0 10px;
+    outline: 0;
+}
+
+
+.input-container .add-btn{
+    width: 20%;
+    background-color: #60D031;
+    border-radius: 0 10px 10px 0;
+    color: aliceblue;
+    text-align: center;
+    line-height: 2.5em;
+    cursor: pointer;
+}
+
+
+
+.todos-container li, .done-todos-container li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #363636;
+    margin: .5em 0;
+    border-radius: 10px;
+    padding: .5em;
+    text-align: justify;
+    word-break: break-all;
+    word-wrap: normal;
+    overflow: hidden;
+}
+
+.todos-container li .removeBtn{
+    flex-shrink: 0;
+    align-self: start;
+    padding: .5em;
+    margin: 0 0 0 .5em;
+    background-color: #D84750;
+    color: white;
+    border-radius: 10px;
+    word-break: none;
+}
+
+.todos-container li .removeBtn:hover{
+    background-color: #d4333e;
 }
